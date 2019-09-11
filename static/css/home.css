@@ -1,0 +1,722 @@
+/*/////////////////////////////////////////////
+	International Hip Dysplasia Institute
+	Copyright © 2009, McMurry Inc.
+	http://www.mcmurry.com
+	Design by Brandon Kidd
+
+	Home Stylesheet
+/////////////////////////////////////////////*/
+
+/*---------------------------------------------
+	Structure
+---------------------------------------------*/
+#top{ background-image: url(../Images/bg-top-home.jpg); }
+#main_content{ margin: 300px 0 0; padding: 10px 0 20px 20px; }
+
+/*---------------------------------------------
+	Main Content
+---------------------------------------------*/
+/* Marquee */
+#marquee{ width: 700px; height: 345px; position: absolute; right: 0; top: 56px; z-index: 10; background: transparent no-repeat center top; overflow: hidden; }
+#marquee.ihdi{ background-image: url(../Images/bg-marquee.jpg); }
+#marquee .slide{ width: 700px; height: 345px; position: absolute; background: transparent no-repeat center top; display: block; overflow: hidden; text-indent: -999999em; }
+#marquee .slide1{ background-image: url(../Images/marquee-slide1.jpg); }
+#marquee .slide2{ background-image: url(../Images/marquee-slide2.jpg); }
+#marquee .slide3{ background-image: url(../Images/marquee-slide3.jpg); }
+#marquee .slide-pepsi{ background-image: url(../Images/marquee-slidepepsi.jpg); }
+#marquee-nav{ position: absolute; left: 285px; top: 346px; z-index: 20; }
+#marquee-nav a{ background: #4174a3; border: solid 3px #6491b8; color: #fff; display: inline; float: left; font-size: 14px; margin: 0 5px 0 0; padding: 5px 8px; text-align: center; text-decoration: none; }
+#marquee-nav a:hover{ background: #6491b8; }
+#marquee-nav a.activeSlide{ background: #fff; border-color: #e3e3e3; color: #4174a3; }
+/* Video Library */
+#video-library{ width: 670px; height: 60px; position: relative; background: transparent url(../Images/bg-videolibrary.gif) no-repeat center top; overflow: hidden; padding: 10px 0 10px 10px; }
+#video-library h2{ width: 90px; height: 60px; background: transparent none; display: inline; float: left; font-size: 1.25em; line-height: 1.25em; margin: 0 10px 0 0; padding: 0; }
+#video-library h2 a{ color: #369; text-decoration: none; }
+#video-library h2 a:hover, #video-library h2 a:focus{ color: #454545; }
+#video-library .btn-nextvideo{ width: 30px; height: 80px; position: absolute; right: 0; top: 0; background: transparent url(../Images/btn-nextvideo.jpg) no-repeat center top; display: block; overflow: hidden; text-indent: -99999em; }
+#video-library .btn-nextvideo:hover, #video-library .btn-nextvideo:focus{ background-position: center bottom; }
+#video-library div{ width: 540px; height: 60px; background: transparent none !important; display: inline; float: left; }
+#video-library div .video{ width: 260px; height: 60px; background: transparent none !important; cursor: pointer; display: inline; float: left; margin: 0 10px 0 0; padding: 0; }
+#video-library div .video-hover{ background: #ccc; }
+#video-library div .video h3{ width: 160px; color: #369; display: inline; float: right; font-size: 1em; font-style: normal; line-height: 1.25em; }
+#video-library div .video img{ display: inline; float: left; margin: 0 10px 0 0; }
+#video-library div .video p{ width: 160px; display: inline; float: left; font-size: 0.75em; line-height: 1.25em; margin: 0; }
+#video-library div .video a{ display: inline; float: left; font-size: 0.75em; line-height: 1.5em; text-decoration: none; }
+/* CTA Bar */
+#cta-buttons{ width: 220px; height: 210px; display: inline; float: left; margin: 80px 0 0; overflow: hidden; padding: 10px 20px 0; position: relative;z-index: 1;}
+#cta-buttons li{ display: inline; float: left; margin: 0 0 10px; overflow: hidden; }
+#cta-buttons li a{ width: 220px; height: 60px; background: transparent no-repeat center top; display: inline; float: left; margin: 0; overflow: hidden; text-indent: -99999em; }
+#cta-buttons li.cta-getinvolved a{ background-image: url(../Images/cta-getinvolved.jpg); }
+#cta-buttons li.cta-findaspecialist a{ background-image: url(../Images/cta-findaspecialist.jpg); }
+#cta-buttons li.cta-whatcausesit a{ background-image: url(../Images/cta-whatcausesit.jpg); }
+#cta-buttons li.cta-wyattwhitneystory a{ background-image: url(../Images/cta-wyattwhitneystory.jpg); }
+#cta-buttons li.cta-donatenow a{ background-image: url(../Images/cta-donatenow.jpg); }
+#cta-buttons li.cta-facebook a{  width: 23px; height: 23px; background: transparent url(../Images/cta-facebook.jpg) no-repeat 0 0; display: inline; float: left; overflow: hidden; position: absolute; right: 341px; top: 44px; text-indent: -99999em;  }
+#cta-buttons li.cta-youtube a{ background-image: url(../Images/cta-youtube.jpg); }
+#cta-buttons li.cta-twitter a{ background-image: url(../Images/cta-twitter.gif); }
+#cta-buttons li.cta-rss a{ background-image: url(../Images/cta-rss.gif); }
+#cta-buttons li.cta-swaddling a{ background-image: url(../Images/cta-swaddling.jpg); }
+
+.transposh-es #cta-buttons li.cta-donatenow a{ background-image: url(../Images/cta-donatenow-es.jpg); }
+.transposh-es #cta-buttons li.cta-getinvolved a{ background-image: url(../Images/cta-getinvolved-es.jpg); }
+.transposh-es #cta-buttons li.cta-swaddling a{ background-image: url(../Images/cta-swaddling-es.jpg); }
+
+/*---------------------------------------------
+	Beta Testing Modal
+---------------------------------------------*/
+#beta-testing{ width: 500px; background: #fff; border: solid 2px #ccc; padding: 10px; }
+#beta-testing.inactive{ display: none; }
+#beta-testing h3{ color: #295789; font-size: 2em; line-height: 1.5em; margin: 0 0 0.25em; }
+#beta-testing p{ font-size: 1.4em; line-height: 1.5em; text-align: justify; }
+#beta-testing a{ color: #295789; }
+#beta-testing a:hover{ color: #666; text-decoration: none; }
+
+body.home.page #top{
+	margin-top: 190px;
+}
+
+body.home.page{
+	background: white;
+}
+
+body.home.page #main_inner{
+	width: auto;
+	max-width: 100%;
+}
+
+body.home.page #wrap, body.home.page #top{
+	background: white;
+}
+
+body.home.page #main_content{
+	width: auto;
+	max-width: 100%;
+	display: block;
+}
+
+body.home.page #litContent div{
+	float: none !important;
+}
+
+body.home.page .hero-wrap{
+	width: 100%;
+	height: calc(100vh - 190px);
+	position: relative;
+}
+
+body.home.page .hero-wrap .slider{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 50;
+	background-color: black;
+}
+
+body.home.page .hero-wrap .slider .slide{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	transform: translateY(0);
+	-webkit-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-moz-transform: translateY(0);
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+	transition: opacity 0.35s ease-in-out;
+}
+
+body.home.page .hero-wrap .slider .slide.active{
+	opacity: 1;
+}
+
+body.home.page .hero-wrap .arr{
+	width: 60px;
+	height: 60px;
+	background-color: white;
+	position: absolute;
+	z-index: 750;
+	border-radius: 50%;
+	color: #4576a5;
+	font-size: 42px;
+	display: inline-block;
+	cursor: pointer;
+	transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+body.home.page .hero-wrap .arr:hover{
+	background-color: rgba(247,200,120,1);
+	color: #221f1f;
+}
+
+body.home.page .hero-wrap .arr.next{
+	top: 50%;
+	right: 35px;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+}
+
+body.home.page .hero-wrap .arr.prev{
+	top: 50%;
+	left: 35px;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+}
+
+body.home.page .hero-wrap .arr i{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	max-width: 15px;
+	line-height: 28px;
+	margin: auto;
+}
+
+body.home.page .hero-wrap .arr.prev i{
+	transform: translate(-15%,-51%);
+	-webkit-transform: translate(-15%,-51%);
+	-moz-transform: translate(-15%,-51%);
+	-ms-transform: translate(-15%,-51%);
+}
+
+body.home.page .hero-wrap .arr.next i{
+	transform: translate(20%,-51%);
+	-webkit-transform: translate(20%,-51%);
+	-moz-transform: translate(20%,-51%);
+	-ms-transform: translate(20%,-51%);
+}
+
+body.home.page .hero-wrap .description{
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: auto;
+	width: 100%;
+	max-width: 900px;
+	margin: auto;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	z-index: 100;
+	color: white;
+	backface-visibility: hidden;
+}
+
+body.home.page .hero-wrap .description h1{
+	font-size: 75px;
+	font-weight: 600;
+	color: white;
+	text-align: center;
+	line-height: 80px;
+	font-family: 'Droid Serif', Georgia, Times New Roman, Serif;
+	margin-bottom: 27.5px;
+	letter-spacing: 2px;
+}
+
+body.home.page .hero-wrap .description p{
+	font-size: 25px;
+	text-align: center;
+	line-height: 33px;
+	color: white;
+	margin-bottom: 50px;
+	font-weight: 300;
+}
+
+body.home.page .introduction, body.home.page .what-is-it{
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	padding: 145px 30px;
+}
+
+body.home.page .introduction .content-wrap{
+	max-width: 800px;
+	margin: auto;
+	text-align: center;
+}
+
+body.home.page .introduction .content-wrap h2, body.home.page .what-is-it .content-wrap h2{
+	text-align: center;
+}
+
+body.home.page h2{
+	font-size: 35px;
+	color: #4576a5;
+	margin-bottom: 45px;
+	font-weight: 600;
+	font-family: 'Droid Serif', Georgia, Times New Roman, Serif;
+	line-height: 42px;
+}
+body.home.page .what-is-it .content-wrap h2{
+	margin-bottom: 65px;
+}
+
+body.home.page p{
+	font-size: 18px;
+	color: #383838;
+	line-height: 24px;
+}
+
+body.home.page .what-is-it .content-wrap{
+	max-width: 1100px;
+	margin: auto;
+	text-align: left;
+}
+
+body.home.page .what-is-it .content-wrap .ce-wrap, body.home.page .introduction .content-wrap .ce-wrap{
+	margin-bottom: 75px;
+}
+
+body.home.page .what-is-it .content-wrap p{
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+	-moz-column-count: 2; /* Firefox */
+	column-count: 2;
+}
+
+body.home.page .cta-wrap a{
+	display: inline-block;
+	background-color: transparent;
+	color: #ffb136;
+	padding: 17.5px 25px;
+	border: 3px solid #ffb136;
+	border-radius: 50px;
+	font-size: 18px;
+	text-decoration: none;
+	min-width: 150px;
+	transition: background-color 0.125s ease-in-out, color 0.125s ease-in-out;
+	margin: auto 20px;
+	font-weight: 600;
+}
+body.home.page .cta-wrap a:hover{
+	background-color: #ffb136;
+	color: white;
+}
+body.home.page .cta-wrap a.white{
+	color: white;
+	border-color: white;
+}
+body.home.page .cta-wrap a.white:hover{
+	color: #383838;
+	background-color: white;
+}
+body.home.page .cta-wrap {
+	text-align: center;
+}
+body.home.page .bot-footer .content-wrap p{
+	color: white;
+}
+
+
+body.home.page .latest-news #main_sidebar{
+	padding: 0;
+	margin: auto !important;
+	width: auto;
+	display: block;
+	float: none;
+	max-width: 1240px;
+	position: relative;
+}
+
+body.home.page #text-5, body.home.page #text-11, body.home.page #text-4{
+	display: none;
+}
+
+body.home.page #text-2, body.home.page #text-12{
+	width: 100%;
+	max-width: 49.5%;
+	display: inline-block;
+	margin: auto;
+	vertical-align: top;
+}
+
+body.home.page #text-2 #latest-news, body.home.page #text-12 #latest-news {
+	width: auto;
+	max-width: 100%;
+	margin: auto;
+	padding: 0;
+	background: transparent;
+	padding-top: 50px;
+	padding-bottom: 75px;
+	position: static;
+}
+
+
+body.home.page .latest-news{
+	background: url(http://hipdysplasia.org/wp-content/uploads/2016/07/stories_hero.jpg);
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+	padding: 135px 30px;
+}
+
+body.home.page #latest-news h2 a{
+	color: white;
+	font-size: 35px;
+	font-weight: 300;
+	font-family: 'Droid Sans', Arial, Verdana, Sans-Serif;
+}
+
+body.home.page #latest-news  #news-wrap{
+	float: none;
+	display: block;
+	overflow: visible;
+}
+
+body.home.page #latest-news  #news-wrap .news{
+	width: auto;
+	max-width: 100%;
+	display: block;
+	float: none;
+	margin: auto;
+	margin-bottom: 75px;
+	position: relative;
+	overflow: visible;
+	padding-left: 115px;
+}
+body.home.page #latest-news  #news-wrap .news:nth-child(3){
+	margin-bottom: 0;
+}
+
+body.home.page #latest-news  #news-wrap  .news-hover{
+	background: transparent;
+}
+
+body.home.page #latest-news  #news-wrap  .news .date{
+    background: transparent;
+    width: 86px;
+    height: 78px;
+    border-radius: 50%;
+    border: 2px solid white;
+    float: none;
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    padding: 9px 3px 0 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+body.home.page #latest-news  #news-wrap  .news .date strong{
+	font-size: 36px;
+	color: white;
+	display: block;
+	font-weight: 300;
+}
+
+body.home.page #latest-news  #news-wrap  .news h3{
+	width: auto;
+	display: block;
+	float: none;
+	font-family: 'Droid Sans', Arial, Verdana, Sans-Serif;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 20px;
+}
+
+body.home.page #latest-news  #news-wrap  .news h3 a{
+	color: white;
+}
+
+body.home.page #latest-news  #news-wrap  .news p{
+	width: auto;
+	display: block;
+	float: none;
+	color: white;
+	font-size: 18px;
+}
+
+body.home.page #text-2 #latest-news{
+	padding-right: 85px;
+	border-right: 1px solid white;
+}
+
+body.home.page #text-12 #latest-news{
+	padding-left: 85px;
+}
+
+body.home.page #latest-news  a.viewall{
+	top: auto;
+	bottom: 0;
+	right: 0;
+	color: white;
+	text-transform: capitalize;
+	font-size: 18px;
+	text-decoration: none;
+	font-weight: 600;
+	transition: color 0.25s ease-in-out;
+}
+
+body.home.page #latest-news  a.viewall:hover{
+	color: rgba(247,200,120,1);
+}
+
+body.home.page #text-2 #latest-news a.viewall{
+	right: calc(50% + 60px);
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	display: none;
+}
+
+body.home.page #text-12 #latest-news a.viewall{
+	right: 8px;
+}
+body.home.page .tiles{
+	margin-top: 12.5px;
+}
+body.home.page .tiles .tile{
+	width: calc(100%/3);
+	margin: auto;
+	vertical-align: top;
+	height: 675px;
+	display: inline-block;
+	position: relative;
+}
+
+body.home.page .tiles .tile .content-wrap{
+	position: absolute;
+	top: 50%;
+	left: 20px;
+	right: 20px;
+	text-align: center;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	margin: auto;
+	color: white;
+}
+
+body.home.page .tiles .tile .content-wrap h3, body.home.page .tiles .tile .content-wrap p{
+	text-align: center;
+	color: white;
+}
+
+body.home.page .tiles .tile .content-wrap h3{
+	font-size: 35px;
+}
+
+body.home.page .tiles .tile .content-wrap p{
+	font-weight: 600;
+	padding: 20px 0 35px;
+}
+
+body.home.page .tiles .tile:nth-of-type(1){
+	background-image: url(http://hipdysplasia.org/wp-content/uploads/2016/07/get_involved.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+body.home.page .tiles .tile:nth-of-type(2){
+	background-image: url(http://hipdysplasia.org/wp-content/uploads/2016/07/donate.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+body.home.page .tiles .tile:nth-of-type(3){
+	background-image: url(http://hipdysplasia.org/wp-content/uploads/2016/07/hip_swaddling.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+body.home.page #latest-news  #news-wrap  .news p i{
+	padding-left: 5px;
+}
+
+
+@media screen and (max-width: 1440px){
+	body.home.page .hero-wrap .description h1{
+		font-size: 52px;
+		line-height: 55px;
+	}
+	body.home.page .hero-wrap .description p{
+		font-size: 20px;
+		line-height: 24px;
+		margin-bottom: 35px;
+	}
+}
+
+@media screen and (max-width: 1430px){
+	body.home.page #top{
+		margin-top: 165px;
+	}
+	body.home.page .hero-wrap{
+		height: calc(100vh - 165px);
+	}
+}
+
+@media screen and (max-width: 1275px){
+	body.home.page .tiles .tile{
+		width: 100%;
+		max-width: 100%;
+		height: 337.5px;
+	}
+}
+
+@media screen and (max-width: 1275px){
+	body.home.page .tiles2 .tile{
+		width: 100%;
+		max-width: 100%;
+		height: 337.5px;
+	}
+}
+
+@media screen and (max-width: 1225px){
+	body.home.page .hero-wrap{
+		height: calc(100vh - 155px);
+	}
+	body.home.page #top{
+		margin-top: 155px;
+	}
+}
+
+
+@media screen and (max-width: 1024px){
+	body.home.page #top{
+		margin-top: 115px;
+	}
+	body.home.page .hero-wrap .controls{
+		display: none;
+		pointer-events: none;
+	}
+	body.home.page .hero-wrap{
+		height: calc(100vh - 115px);
+	}
+	body.home.page .what-is-it .content-wrap p{
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+		-o-column-count: 1;
+		column-count: 1;
+		margin-bottom: 18px;
+	}
+	body.home.page #text-2, body.home.page #text-12{
+		max-width: 100%;
+		display: block;
+		width: auto;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	body.home.page #text-2 #latest-news, body.home.page #text-12 #latest-news{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	body.home.page #text-2 #latest-news{
+		border: none;
+		border-bottom: 1px solid white;
+		padding-top: 50px;
+		padding-bottom: 100px;
+	}
+	#latest-news  a.viewall, body.home.page #text-12 #latest-news a.viewall{
+		position: relative;
+		top: auto;
+		left: auto;
+		bottom: auto;
+		right: auto;
+		transform: none;
+		-webkit-transform: none;
+		-moz-transform: none;
+		-ms-transform: none;
+		margin-bottom: 20px;
+		display: inline-block;
+		float: right;
+	}
+	#latest-news  h2, body.home.page #text-2 #latest-news h2, body.home.page #text-12 #latest-news h2{
+		margin-bottom: 15px;
+	}
+	body.home.page #latest-news  #news-wrap{
+		clear: both;
+	}
+	body.home.page #latest-news  #news-wrap  .news .date{
+	    width: 72px;
+    	height: 71px;
+        padding: 10px 3px 0 6px;
+	}
+	body.home.page #latest-news  #news-wrap  .news .date strong{
+		font-size: 32px;
+	}
+	body.home.page #latest-news  #news-wrap .news{
+		padding-top: 10px;
+		margin-bottom: 50px;
+	}
+}
+
+@media screen and (max-width: 660px){
+	body.home.page .hero-wrap .description h1{
+		font-size: 30px;
+		line-height: 34px;
+	}
+	body.home.page .hero-wrap .description p{
+		font-size: 18px;
+		line-height: 20px;
+	}
+	body.home.page .introduction .cta-wrap a{
+		margin-bottom: 20px;
+	}
+	body.home.page .hero-wrap .description{
+		padding: 0 30px;
+	}
+	body.home.page .hero-wrap .description p br{
+		display: none;
+	}
+	body.home.page #latest-news  #news-wrap .news{
+		padding-top: 0;
+	}
+}
+
+@media screen and (max-width: 420px){
+	body.home.page #latest-news #news-wrap .news{
+		padding-left: 80px;
+	}
+	body.home.page #latest-news  #news-wrap  .news .date{
+	    font-size: 14px;
+	    width: 52px;
+	    height: 48px;
+		padding: 11px 3px 0 5px;
+	}
+	body.home.page #latest-news  #news-wrap  .news .date strong{
+		font-size: 22px;
+	}
+	body.home.page #text-2 #latest-news, body.home.page #text-12 #latest-news{
+		position: relative;
+	}
+	#latest-news  a.viewall, body.home.page #text-2 #latest-news a.viewall, body.home.page #text-12 #latest-news a.viewall{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+}
+
+@media screen and (max-width: 340px){
+	body.home.page #latest-news #news-wrap .news{
+		padding-left: 0;
+		padding-top: 65px;
+		text-align: center;
+	}
+	body.home.page #latest-news  #news-wrap  .news h3, #latest-news  h2, body.home.page #text-2 #latest-news h2, body.home.page #text-12 #latest-news h2{
+		text-align: center;
+	}
+	body.home.page #latest-news  #news-wrap  .news .date{
+		right: 0;
+		margin: auto;
+	}
+	body.home.page #text-12 #latest-news a.viewall{
+		margin-bottom: 0;
+		margin-top: 20px;
+	}
+}
